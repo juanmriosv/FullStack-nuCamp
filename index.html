@@ -7,14 +7,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />    
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <title>Boostrap Excercise: Juan Manuel Rios Villanueva</title>
 
@@ -27,7 +26,7 @@
         <div class="container">
             <div class="row row-content">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
+                    <img src="img/logo.png" class="img-fluid" alt="logo"/>
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
@@ -102,7 +101,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" height="30" width="30" />
+                <img src="img/logo.png" height="30" width="30" alt="logo"/>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -144,11 +143,11 @@
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder-"Enter email">
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                                 </div>
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder-"Password">
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
                                 </div>
                                 <div class="col">
                                     <div class="form-check">
@@ -210,14 +209,11 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    <div class="btn-group" id="carouselButton">
-                        <button class="btn btn-danger btn-sm" id="carouselPause">
-                            <i class="fa fa-pause"></i>
-                        </button>
-                        <button class="btn btn-danger btn-sm" id="carouselPlay">
-                            <i class="fa fa-play"></i>
-                        </button>
-                    </div>
+
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+
                 </div>
             </div>
         </div>
@@ -304,26 +300,13 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
-    <!-- <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script> -->
-    <script>
-        $(function() {
-            $(".carousel").carousel( { interval: 2000 } );
-            $("#carouselPause").click(function(){
-                $(".carousel").carousel("pause");
-            });
-            $("#carouselPlay").click(function(){
-                $(".carousel").carousel("cycle");
-            });
-        });
-    </script>
 </body>
 
 
