@@ -14,11 +14,11 @@ $(function() {
     });
     // Reserve Modal
     $('#reserveButton').click(function(){
-        $('#reserveModal').modal();
+        $('#reserveModal').modal("show");
     });
     // Login Modal
     $('#loginButton').click(function(){
-        $('#loginmodal').modal();
+        $('#loginmodal').modal("show");
     });
 
 });
